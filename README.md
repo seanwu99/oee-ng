@@ -57,8 +57,8 @@ oee-ng/
 ## Multiple versions
 There are three different versions in the OEE Template
 - [jQuery version](https://github.com/seanwu99/oee-jq)
-- [ReactJS version](https://github.com/seanwu99/oee-at)
-- [AngularJS version](https://github.com/seanwu99/oee-ng)
+- [React version](https://github.com/seanwu99/oee-at)
+- [Angular version](https://github.com/seanwu99/oee-ng)
 
 Angular version
 --------
