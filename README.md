@@ -18,40 +18,129 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 oee-ng/
-├── src/
-│   ├── app/
-│   │   ├── _directives/
-│   │   │    ├── href-prevent-default.directive.ts
-│   │   │    └── unwrap-tag.directive.ts
-│   │   ├── _services/
-│   │   │    ├── error-handler.service.ts
-│   │   │    └── script-loader.service.ts
-│   │   ├── theme/
-│   │   │    ├── theme.component.html
-│   │   │    ├── theme.component.ts
-│   │   │    └── theme-routing.module.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   ├── app-routing.module.ts
-│   │   └── helpers.ts
-│   ├── assets/
-│   │   ├── app/
-│   │   ├── default/
-│   │   └── vendors/
-│   ├── environments/
-│   │   ├── environment.prod.ts
-│   │   └── environment.ts
-│   ├── index.html
-│   ├── main.ts
-│   ├── polyfills.ts
-│   ├── styles.scss
-│   └── tsconfig.app.json
-├── angular.json
-├── LICENSE
-├── package.json
-├── README.md
-└── tsconfig.json
+│  angular.json
+│  LICENSE
+│  package-lock.json
+│  package.json
+│  README.md
+│  tsconfig.json
+└─src
+    │  index.html
+    │  main.ts
+    │  MESM_FloorMaps.xml
+    │  polyfills.ts
+    │  styles.scss
+    │  tsconfig.app.json
+    │  typings.d.ts
+    │
+    ├─app
+    │  │  app-routing.module.ts
+    │  │  app.component.html
+    │  │  app.component.ts
+    │  │  app.module.ts
+    │  │  helpers.ts
+    │  │
+    │  ├─theme
+    │  │  │  theme-routing.module.ts
+    │  │  │  theme.component.html
+    │  │  │  theme.component.ts
+    │  │  │
+    │  │  ├─layouts
+    │  │  │  │  layout.module.ts
+    │  │  │  │
+    │  │  │  ├─aside-nav
+    │  │  │  │      aside-nav.component.html
+    │  │  │  │      aside-nav.component.ts
+    │  │  │  │
+    │  │  │  ├─footer
+    │  │  │  │      footer.component.html
+    │  │  │  │      footer.component.ts
+    │  │  │  │
+    │  │  │  ├─header-nav
+    │  │  │  │      header-nav.component.html
+    │  │  │  │      header-nav.component.ts
+    │  │  │  │
+    │  │  │  └─quick-sidebar
+    │  │  │          quick-sidebar.component.html
+    │  │  │          quick-sidebar.component.ts
+    │  │  │
+    │  │  └─pages
+    │  │      └─default
+    │  │          │  default.component.html
+    │  │          │  default.component.ts
+    │  │          │
+    │  │          ├─index
+    │  │          │      index.component.html
+    │  │          │      index.component.ts
+    │  │          │      index.module.ts
+    │  │          │
+    │  │          └─not-found
+    │  │                  not-found.component.html
+    │  │                  not-found.component.ts
+    │  │                  not-found.module.ts
+    │  │
+    │  ├─_directives
+    │  │      href-prevent-default.directive.ts
+    │  │      unwrap-tag.directive.ts
+    │  │
+    │  └─_services
+    │          error-handler.service.ts
+    │          script-loader.service.ts
+    │
+    ├─assets
+    │  │  .gitkeep
+    │  │
+    │  ├─app
+    │  │  ├─js
+    │  │  │      oee.js
+    │  │  │
+    │  │  └─media
+    │  │
+    │  ├─default
+    │  │  ├─base
+    │  │  │      scripts.bundle.js
+    │  │  │      style.bundle.css
+    │  │  │      style.bundle.rtl.css
+    │  │  │
+    │  │  └─media
+    │  │      └─img
+    │  │
+    │  └─vendors
+    │      ├─base
+    │      │  │
+    │      │  ├─fonts
+    │      │  │
+    │      │  └─images
+    │      │
+    │      └─custom
+    │          ├─datatables
+    │          │      datatables.bundle.css
+    │          │      datatables.bundle.js
+    │          │      datatables.bundle.rtl.css
+    │          │
+    │          ├─flot
+    │          │      flot.bundle.js
+    │          │
+    │          ├─fullcalendar
+    │          │      fullcalendar.bundle.css
+    │          │      fullcalendar.bundle.js
+    │          │      fullcalendar.bundle.rtl.css
+    │          │
+    │          ├─jquery-ui
+    │          │  │  jquery-ui.bundle.css
+    │          │  │  jquery-ui.bundle.js
+    │          │  │  jquery-ui.bundle.rtl.css
+    │          │  │
+    │          │  └─images
+    │          │
+    │          └─jqvmap
+    │                  jqvmap.bundle.css
+    │                  jqvmap.bundle.js
+    │                  jqvmap.bundle.rtl.css
+    │
+    └─environments
+            environment.prod.ts
+            environment.ts
 ```
 
 ## Multiple versions
